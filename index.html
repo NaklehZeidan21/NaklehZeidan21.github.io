@@ -21,31 +21,33 @@
       .boxes {
         display: flex;
         justify-content: center;
-        gap: 1rem;
-        margin: 20px auto 10px;
+        gap: 2rem;
+        margin: 20px auto;
       }
 
       .box {
         background-color: #222;
         border: 1px solid #555;
-        padding: 10px 15px;
-        font-size: 0.9em;
-        border-radius: 5px;
-        min-width: 100px;
-        cursor: default;
+        padding: 15px 20px;
+        font-size: 1em;
+        border-radius: 6px;
+        min-width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         user-select: none;
+        cursor: default;
       }
 
       .read-more {
+        margin-top: 8px;
         color: #6e5494;
         font-weight: bold;
         cursor: pointer;
-        user-select: none;
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        justify-content: center;
         gap: 5px;
-        font-size: 1em;
+        font-size: 0.9em;
       }
 
       .arrow {
@@ -126,17 +128,23 @@
         </small>
     </p>
     <div class="main">
-      <p>SOON</p>
+      <p>I'll update when I remember</p>
 
       <div class="boxes">
-        <div class="box">CVE-2025-001</div>
-        <div class="box">CVE-2025-002</div>
-        <div class="box">CVE-2025-003</div>
+        <div class="box">
+          CVE-2025-001
+          <div class="read-more">Read more <i class="arrow"></i></div>
+        </div>
+        <div class="box">
+          CVE-2025-002
+          <div class="read-more">Read more <i class="arrow"></i></div>
+        </div>
+        <div class="box">
+          CVE-2025-003
+          <div class="read-more">Read more <i class="arrow"></i></div>
+        </div>
       </div>
 
-      <div class="read-more">
-        Read more <i class="arrow"></i>
-      </div>
     </div>
 
     <footer>

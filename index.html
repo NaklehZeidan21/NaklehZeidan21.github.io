@@ -18,11 +18,44 @@
         text-align: center;
       }
 
-      .main img {
-        max-width: 200px;
-        height: auto;
-        display: block;
-        margin: 20px auto;
+      .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 20px auto 10px;
+      }
+
+      .box {
+        background-color: #222;
+        border: 1px solid #555;
+        padding: 10px 15px;
+        font-size: 0.9em;
+        border-radius: 5px;
+        min-width: 100px;
+        cursor: default;
+        user-select: none;
+      }
+
+      .read-more {
+        color: #6e5494;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1em;
+      }
+
+      .arrow {
+        border: solid #6e5494;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-top: 2px;
       }
 
       .sub {
@@ -43,9 +76,11 @@
         font-size: 1em;
         margin-top: 10px;
       }
-    small{
-      margin-top:.9rem;
-    }
+
+      small {
+        margin-top: 0.9rem;
+      }
+
       footer {
         position: absolute;
         bottom: 10px;
@@ -91,9 +126,19 @@
         </small>
     </p>
     <div class="main">
-      <p>I'll update when I remember</p>
-      <img src="https://media1.tenor.com/m/NqURjAGH6GYAAAAd/cat-code.gif" alt="CodingCat">
+      <p>SOON</p>
+
+      <div class="boxes">
+        <div class="box">CVE-2025-001</div>
+        <div class="box">CVE-2025-002</div>
+        <div class="box">CVE-2025-003</div>
+      </div>
+
+      <div class="read-more">
+        Read more <i class="arrow"></i>
+      </div>
     </div>
+
     <footer>
       <p>Made with GitHub <a href="https://github.com/NaklehZeidan21" target="_blank">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="github-icon" alt="GitHub">

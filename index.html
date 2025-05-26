@@ -26,6 +26,7 @@
       }
 
       .box {
+        position: relative;
         background-color: #222;
         border: 1px solid #555;
         padding: 15px 20px;
@@ -37,6 +38,20 @@
         align-items: center;
         user-select: none;
         cursor: default;
+      }
+
+      /* Tag in top right corner */
+      .tag {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: #6e5494;
+        color: white;
+        font-size: 0.7em;
+        font-weight: bold;
+        padding: 2px 6px;
+        border-radius: 3px;
+        user-select: none;
       }
 
       .read-more {
@@ -124,7 +139,7 @@
     <p class="sub"><b>Cybersecurity researcher.</b> 
       <br>
         <small>
-        Identifying and reporting vulnerabilities in open-source projects before attackers do.
+        Identifying and reporting vulnerabilities in open-source projects before bad actors do.
         </small>
     </p>
     <div class="main">
@@ -132,14 +147,17 @@
 
       <div class="boxes">
         <div class="box">
+          <div class="tag">RCE</div>
           CVE-2025-001
           <div class="read-more">Read more <i class="arrow"></i></div>
         </div>
         <div class="box">
+          <div class="tag">XSS</div>
           CVE-2025-002
           <div class="read-more">Read more <i class="arrow"></i></div>
         </div>
         <div class="box">
+          <div class="tag">SQLi</div>
           CVE-2025-003
           <div class="read-more">Read more <i class="arrow"></i></div>
         </div>

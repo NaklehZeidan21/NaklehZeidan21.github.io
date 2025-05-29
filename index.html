@@ -144,6 +144,43 @@
         margin-botton:10px;
       }
 
+      
+  .linkedin-follow {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .linkedin-follow a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    border: 1px solid #0077b5;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .linkedin-follow a:hover {
+    background-color: #0077b5;
+    color: white;
+  }
+
+  .linkedin-follow svg {
+    width: 16px;
+    height: 16px;
+    fill: #0077b5;
+  }
+
+  .linkedin-follow a:hover svg {
+    fill: white;
+  }
+
+
       /* Responsive adjustments */
       @media (max-width: 600px) {
         h1 {
@@ -170,7 +207,7 @@
         .location {
           position: fixed;
           top: 10px;
-          right: 10px;
+          left: 10px;
           font-size: 0.8em;
         }
 
@@ -183,6 +220,17 @@
   </head>
   <body>
     <div class="location">Location: 0º 0' 0"</div>
+
+        <!-- LinkedIn Follow Button -->
+<div class="linkedin-follow">
+    <a href="https://www.linkedin.com/in/nakleh-z-0b1737187" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.79 53.79 0 0 1 0 53.5 53.79 53.79 0 0 1 53.84 0a53.79 53.79 0 0 1 53.72 53.5A53.79 53.79 0 0 1 53.84 107zM447.9 448h-92.4V302.4c0-34.7-12.4-58.4-43.4-58.4-23.7 0-37.8 16-44 31.4-2.3 5.6-2.9 13.4-2.9 21.3V448h-92.4s1.2-263.3 0-290.9h92.4v41.2c-.2.3-.5.7-.7 1h.7v-1c12.3-19 34.3-46.2 83.6-46.2 61 0 106.7 39.8 106.7 125.3V448z"/>
+      </svg>
+      Follow on LinkedIn
+    </a>
+  </div>
+    
 
     <h1>Nakleh Zeidan 👋</h1>
     <p class="sub"><b>Cybersecurity researcher.</b> 

@@ -21,18 +21,33 @@
       }
 
       .boxes {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 20px auto;
+  max-width: 1000px; /* Optional: limit width for better layout */
+}
+
+.box {
+  width: calc(25% - 1.5rem); /* 4 per row with gap */
+  max-width: none;
+}
+
+
+/*       .boxes {
         display: flex;
         justify-content: center;
         gap: 2rem;
         margin: 20px auto;
         flex-wrap: wrap; /* allow wrapping on small screens */
       }
-
+/* 
       .box {
         position: relative;
         background-color: #222;
         border: 1px solid #555;
-        padding: 30px 20px 15px 20px; /* more top padding for tag */
+        padding: 30px 20px 15px 20px; 
         font-size: 1em;
         border-radius: 6px;
         min-width: 120px;
@@ -41,11 +56,11 @@
         align-items: center;
         user-select: none;
         cursor: default;
-        flex: 1 1 120px; /* allow boxes to shrink and grow */
-        max-width: 200px; /* limit max width */
+        flex: 1 1 120px;
+        max-width: 200px;
       }
-
-      /* Tag in top right corner */
+ */
+      /* Tag in top right corner */ */
       .tag {
         position: absolute;
         top: 8px;
@@ -193,12 +208,17 @@
           justify-content: center;
         }
 
-        .box {
+          .box {
+          min-width: 100%;
+          max-width: 90%;
+        }
+
+/*         .box {
           min-width: 100%;
           max-width: 90%;
           padding: 20px 15px 10px 15px;
           font-size: 0.9em;
-        }
+        } */
 
         .read-more {
           font-size: 0.85em;
